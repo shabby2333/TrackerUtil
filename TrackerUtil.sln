@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.33711.374
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QbTrackerUtil", "QbTrackerUtil\QbTrackerUtil.csproj", "{270D5F22-99E1-4816-8535-B4E807A5F979}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrTrackerUtil", "TrTrackerUtil\TrTrackerUtil.csproj", "{83261732-81A4-4085-B643-DF1CE4C6FA59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{270D5F22-99E1-4816-8535-B4E807A5F979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{270D5F22-99E1-4816-8535-B4E807A5F979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{270D5F22-99E1-4816-8535-B4E807A5F979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{270D5F22-99E1-4816-8535-B4E807A5F979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83261732-81A4-4085-B643-DF1CE4C6FA59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83261732-81A4-4085-B643-DF1CE4C6FA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83261732-81A4-4085-B643-DF1CE4C6FA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83261732-81A4-4085-B643-DF1CE4C6FA59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F14C5DA-0B42-4D05-9695-C79D5108C8CA}
+	EndGlobalSection
+EndGlobal
