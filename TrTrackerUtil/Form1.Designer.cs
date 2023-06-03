@@ -94,7 +94,7 @@
             this.tbQbUrl});
             this.toolStrip1.Location = new System.Drawing.Point(3, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(461, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(492, 25);
             this.toolStrip1.TabIndex = 0;
             // 
             // toolStripLabel1
@@ -108,7 +108,7 @@
             this.tbQbUrl.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.tbQbUrl.Name = "tbQbUrl";
             this.tbQbUrl.Size = new System.Drawing.Size(300, 25);
-            this.tbQbUrl.Text = "http://192.168.0.4:9091/transmission/rpc";
+            this.tbQbUrl.Text = "http://localhost:9091/transmission/rpc";
             // 
             // toolStrip2
             // 
