@@ -60,7 +60,13 @@ namespace QbTrackerUtil
         {
             var passkey = tbPasskey.Text;
 
-            var torrentList = await _client.TorrentGetAsync(TorrentFields.ALL_FIELDS);
+            var torrentList = await _client.TorrentGetAsync(new string[] { 
+                TorrentFields.ID,
+                TorrentFields.FILES,
+                TorrentFields.NAME,
+                TorrentFields.TRACKERS,
+                TorrentFields.HASH_STRING
+            });
 
 
             var successCount = 0;
