@@ -56,11 +56,13 @@ namespace QbTrackerUtil
 
         }
 
-        private async void btnReplace_Click(object sender, EventArgs e)
+        private void btnReplace_Click(object sender, EventArgs e)
         {
             var passkey = tbPasskey.Text;
 
-            var torrentList = await _client.TorrentGetAsync(new string[] { 
+            Task.Run(new Action(async () =>
+            {
+                var torrentList = await _client.TorrentGetAsync(new string[] {
                 TorrentFields.ID,
                 TorrentFields.FILES,
                 TorrentFields.NAME,
@@ -69,52 +71,56 @@ namespace QbTrackerUtil
             });
 
 
-            var successCount = 0;
-            var failCount = 0;
-            foreach (var torrent in torrentList.Torrents)
-            {
-                var trackerList = torrent.Trackers;
-                foreach (var tracker in trackerList)
+                var successCount = 0;
+                var failCount = 0;
+                foreach (var torrent in torrentList.Torrents)
                 {
-                    if (tracker.announce.Contains("hdtime.org"))
+                    var trackerList = torrent.Trackers;
+                    foreach (var tracker in trackerList)
                     {
-                        try
+                        if (tracker.announce.Contains("hdtime.org"))
                         {
-                            //await _client.EditTrackerAsync(torrent.Hash, tracker.Url, new Uri($"https://tracker.hdtime.org/announce.php?passkey={passkey}"));
-                            _client.TorrentSet(new Transmission.API.RPC.Arguments.TorrentSettings
+                            try
                             {
-                                IDs = new object[] { torrent.ID },
-                                TrackerRemove = new int[] { tracker.ID }
-                            });
+                                //await _client.EditTrackerAsync(torrent.Hash, tracker.Url, new Uri($"https://tracker.hdtime.org/announce.php?passkey={passkey}"));
+                                _client.TorrentSet(new Transmission.API.RPC.Arguments.TorrentSettings
+                                {
+                                    IDs = new object[] { torrent.ID },
+                                    TrackerRemove = new int[] { tracker.ID }
+                                });
 
-                            _client.TorrentSet(new Transmission.API.RPC.Arguments.TorrentSettings
-                            {
-                                IDs = new object[] { torrent.ID },
-                                TrackerAdd = new string[] { $"https://tracker.hdtime.org/announce.php?passkey={passkey}" }
-                            });
+                                _client.TorrentSet(new Transmission.API.RPC.Arguments.TorrentSettings
+                                {
+                                    IDs = new object[] { torrent.ID },
+                                    TrackerAdd = new string[] { $"https://tracker.hdtime.org/announce.php?passkey={passkey}" }
+                                });
 
-                            Invoke(new Action(() =>
+                                successCount++;
+
+                                Invoke(new Action(() =>
+                                {
+                                    btnReplace.Enabled = true;
+                                    tbLog.AppendText($"将[{torrent.Name}]中的tracker[{tracker.announce}]替换成功\n");
+                                }));
+                            }
+                            catch
                             {
-                                btnReplace.Enabled = true;
-                                tbLog.AppendText($"将[{torrent.Name}]中的tracker[{tracker.announce}]替换成功\n");
-                            }));
-                        }
-                        catch
-                        {
-                            failCount++;
-                            Invoke(new Action(() =>
-                            {
-                                tbLog.AppendText($"将[{torrent.Name}]中的tracker[{tracker.announce}]替换失败\n");
-                            }));
+                                failCount++;
+                                Invoke(new Action(() =>
+                                {
+                                    tbLog.AppendText($"将[{torrent.Name}]中的tracker[{tracker.announce}]替换失败\n");
+                                }));
+                            }
                         }
                     }
                 }
-            }
 
-            Invoke(new Action(() =>
-            {
-                tbLog.AppendText($"替换完成,成功{successCount}个，失败{failCount}个\n");
+                Invoke(new Action(() =>
+                {
+                    tbLog.AppendText($"替换完成,成功{successCount}个，失败{failCount}个\n");
+                }));
             }));
+            
         }
     }
 }
