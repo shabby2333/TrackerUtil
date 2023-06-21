@@ -29,305 +29,286 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.BottomToolStripPanel = new System.Windows.Forms.ToolStripPanel();
-            this.TopToolStripPanel = new System.Windows.Forms.ToolStripPanel();
-            this.RightToolStripPanel = new System.Windows.Forms.ToolStripPanel();
-            this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
-            this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
-            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.tbUsername = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
-            this.tbPassword = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnLogin = new System.Windows.Forms.ToolStripButton();
-            this.tbLog = new System.Windows.Forms.RichTextBox();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.cbType = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.tbUrl = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStrip3 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
-            this.tbReplaceDomain = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
-            this.tbTargetUrl = new System.Windows.Forms.ToolStripTextBox();
-            this.btnReplace = new System.Windows.Forms.ToolStripButton();
-            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
-            this.toolStrip2.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            this.toolStrip3.SuspendLayout();
-            this.toolStripContainer1.ContentPanel.SuspendLayout();
-            this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
-            this.toolStripContainer1.SuspendLayout();
-            this.SuspendLayout();
+            BottomToolStripPanel = new ToolStripPanel();
+            TopToolStripPanel = new ToolStripPanel();
+            RightToolStripPanel = new ToolStripPanel();
+            LeftToolStripPanel = new ToolStripPanel();
+            ContentPanel = new ToolStripContentPanel();
+            toolStrip2 = new ToolStrip();
+            toolStripLabel2 = new ToolStripLabel();
+            tbUsername = new ToolStripTextBox();
+            toolStripSeparator1 = new ToolStripSeparator();
+            toolStripLabel3 = new ToolStripLabel();
+            tbPassword = new ToolStripTextBox();
+            toolStripSeparator2 = new ToolStripSeparator();
+            btnLogin = new ToolStripButton();
+            tbLog = new RichTextBox();
+            toolStrip1 = new ToolStrip();
+            cbType = new ToolStripComboBox();
+            toolStripLabel1 = new ToolStripLabel();
+            tbUrl = new ToolStripTextBox();
+            toolStrip3 = new ToolStrip();
+            toolStripLabel5 = new ToolStripLabel();
+            tbReplaceDomain = new ToolStripTextBox();
+            toolStripLabel4 = new ToolStripLabel();
+            tbTargetUrl = new ToolStripTextBox();
+            btnReplace = new ToolStripButton();
+            toolStripContainer1 = new ToolStripContainer();
+            toolStrip2.SuspendLayout();
+            toolStrip1.SuspendLayout();
+            toolStrip3.SuspendLayout();
+            toolStripContainer1.ContentPanel.SuspendLayout();
+            toolStripContainer1.TopToolStripPanel.SuspendLayout();
+            toolStripContainer1.SuspendLayout();
+            SuspendLayout();
             // 
             // BottomToolStripPanel
             // 
-            this.BottomToolStripPanel.Location = new System.Drawing.Point(0, 0);
-            this.BottomToolStripPanel.Name = "BottomToolStripPanel";
-            this.BottomToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.BottomToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.BottomToolStripPanel.Size = new System.Drawing.Size(0, 0);
+            BottomToolStripPanel.Location = new Point(0, 0);
+            BottomToolStripPanel.Name = "BottomToolStripPanel";
+            BottomToolStripPanel.Orientation = Orientation.Horizontal;
+            BottomToolStripPanel.RowMargin = new Padding(3, 0, 0, 0);
+            BottomToolStripPanel.Size = new Size(0, 0);
             // 
             // TopToolStripPanel
             // 
-            this.TopToolStripPanel.Location = new System.Drawing.Point(0, 0);
-            this.TopToolStripPanel.Name = "TopToolStripPanel";
-            this.TopToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.TopToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.TopToolStripPanel.Size = new System.Drawing.Size(0, 0);
+            TopToolStripPanel.Location = new Point(0, 0);
+            TopToolStripPanel.Name = "TopToolStripPanel";
+            TopToolStripPanel.Orientation = Orientation.Horizontal;
+            TopToolStripPanel.RowMargin = new Padding(3, 0, 0, 0);
+            TopToolStripPanel.Size = new Size(0, 0);
             // 
             // RightToolStripPanel
             // 
-            this.RightToolStripPanel.Location = new System.Drawing.Point(0, 0);
-            this.RightToolStripPanel.Name = "RightToolStripPanel";
-            this.RightToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.RightToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.RightToolStripPanel.Size = new System.Drawing.Size(0, 0);
+            RightToolStripPanel.Location = new Point(0, 0);
+            RightToolStripPanel.Name = "RightToolStripPanel";
+            RightToolStripPanel.Orientation = Orientation.Horizontal;
+            RightToolStripPanel.RowMargin = new Padding(3, 0, 0, 0);
+            RightToolStripPanel.Size = new Size(0, 0);
             // 
             // LeftToolStripPanel
             // 
-            this.LeftToolStripPanel.Location = new System.Drawing.Point(0, 0);
-            this.LeftToolStripPanel.Name = "LeftToolStripPanel";
-            this.LeftToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.LeftToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.LeftToolStripPanel.Size = new System.Drawing.Size(0, 0);
+            LeftToolStripPanel.Location = new Point(0, 0);
+            LeftToolStripPanel.Name = "LeftToolStripPanel";
+            LeftToolStripPanel.Orientation = Orientation.Horizontal;
+            LeftToolStripPanel.RowMargin = new Padding(3, 0, 0, 0);
+            LeftToolStripPanel.Size = new Size(0, 0);
             // 
             // ContentPanel
             // 
-            this.ContentPanel.Size = new System.Drawing.Size(514, 406);
+            ContentPanel.Size = new Size(514, 406);
             // 
             // toolStrip2
             // 
-            this.toolStrip2.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel2,
-            this.tbUsername,
-            this.toolStripSeparator1,
-            this.toolStripLabel3,
-            this.tbPassword,
-            this.toolStripSeparator2,
-            this.btnLogin});
-            this.toolStrip2.Location = new System.Drawing.Point(3, 25);
-            this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(340, 25);
-            this.toolStrip2.TabIndex = 1;
+            toolStrip2.Dock = DockStyle.None;
+            toolStrip2.Items.AddRange(new ToolStripItem[] { toolStripLabel2, tbUsername, toolStripSeparator1, toolStripLabel3, tbPassword, toolStripSeparator2, btnLogin });
+            toolStrip2.Location = new Point(3, 25);
+            toolStrip2.Name = "toolStrip2";
+            toolStrip2.Size = new Size(340, 25);
+            toolStrip2.TabIndex = 1;
             // 
             // toolStripLabel2
             // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(44, 22);
-            this.toolStripLabel2.Text = "用户名";
+            toolStripLabel2.Name = "toolStripLabel2";
+            toolStripLabel2.Size = new Size(44, 22);
+            toolStripLabel2.Text = "用户名";
             // 
             // tbUsername
             // 
-            this.tbUsername.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(100, 25);
-            this.tbUsername.Text = "admin";
+            tbUsername.Name = "tbUsername";
+            tbUsername.Size = new Size(100, 25);
+            tbUsername.Text = "admin";
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(6, 25);
             // 
             // toolStripLabel3
             // 
-            this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(32, 22);
-            this.toolStripLabel3.Text = "密码";
+            toolStripLabel3.Name = "toolStripLabel3";
+            toolStripLabel3.Size = new Size(32, 22);
+            toolStripLabel3.Text = "密码";
             // 
             // tbPassword
             // 
-            this.tbPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(100, 25);
+            tbPassword.Name = "tbPassword";
+            tbPassword.Size = new Size(100, 25);
             // 
             // toolStripSeparator2
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new Size(6, 25);
             // 
             // btnLogin
             // 
-            this.btnLogin.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnLogin.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.Image")));
-            this.btnLogin.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(36, 22);
-            this.btnLogin.Text = "登录";
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            btnLogin.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnLogin.Image = (Image)resources.GetObject("btnLogin.Image");
+            btnLogin.ImageTransparentColor = Color.Magenta;
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(36, 22);
+            btnLogin.Text = "登录";
+            btnLogin.Click += btnLogin_Click;
             // 
             // tbLog
             // 
-            this.tbLog.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbLog.Location = new System.Drawing.Point(0, 0);
-            this.tbLog.Name = "tbLog";
-            this.tbLog.ReadOnly = true;
-            this.tbLog.Size = new System.Drawing.Size(670, 331);
-            this.tbLog.TabIndex = 0;
-            this.tbLog.Text = "";
+            tbLog.Dock = DockStyle.Fill;
+            tbLog.Location = new Point(0, 0);
+            tbLog.Margin = new Padding(4);
+            tbLog.Name = "tbLog";
+            tbLog.ReadOnly = true;
+            tbLog.Size = new Size(782, 500);
+            tbLog.TabIndex = 0;
+            tbLog.Text = "";
             // 
             // toolStrip1
             // 
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cbType,
-            this.toolStripLabel1,
-            this.tbUrl});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(507, 25);
-            this.toolStrip1.TabIndex = 0;
+            toolStrip1.Dock = DockStyle.None;
+            toolStrip1.Items.AddRange(new ToolStripItem[] { cbType, toolStripLabel1, tbUrl });
+            toolStrip1.Location = new Point(3, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(507, 25);
+            toolStrip1.TabIndex = 0;
             // 
             // cbType
             // 
-            this.cbType.Items.AddRange(new object[] {
-            "qBitorrent",
-            "transmission"});
-            this.cbType.Name = "cbType";
-            this.cbType.Size = new System.Drawing.Size(121, 25);
-            this.cbType.Text = "qBitorrent";
-            this.cbType.TextChanged += new System.EventHandler(this.cbType_SelectedIndexChanged);
+            cbType.Items.AddRange(new object[] { "qBitorrent", "transmission" });
+            cbType.Name = "cbType";
+            cbType.Size = new Size(121, 25);
+            cbType.Text = "qBitorrent";
+            cbType.TextChanged += cbType_SelectedIndexChanged;
             // 
             // toolStripLabel1
             // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(70, 22);
-            this.toolStripLabel1.Text = "web ui地址";
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new Size(70, 22);
+            toolStripLabel1.Text = "web ui地址";
             // 
             // tbUrl
             // 
-            this.tbUrl.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.tbUrl.Name = "tbUrl";
-            this.tbUrl.Size = new System.Drawing.Size(300, 25);
-            this.tbUrl.Text = "http://localhost:8080";
+            tbUrl.Name = "tbUrl";
+            tbUrl.Size = new Size(300, 25);
+            tbUrl.Text = "http://localhost:8080";
             // 
             // toolStrip3
             // 
-            this.toolStrip3.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel5,
-            this.tbReplaceDomain,
-            this.toolStripLabel4,
-            this.tbTargetUrl,
-            this.btnReplace});
-            this.toolStrip3.Location = new System.Drawing.Point(3, 50);
-            this.toolStrip3.Name = "toolStrip3";
-            this.toolStrip3.Size = new System.Drawing.Size(664, 25);
-            this.toolStrip3.TabIndex = 2;
+            toolStrip3.Dock = DockStyle.None;
+            toolStrip3.Items.AddRange(new ToolStripItem[] { toolStripLabel5, tbReplaceDomain, toolStripLabel4, tbTargetUrl, btnReplace });
+            toolStrip3.Location = new Point(3, 50);
+            toolStrip3.Name = "toolStrip3";
+            toolStrip3.Size = new Size(695, 25);
+            toolStrip3.TabIndex = 2;
             // 
             // toolStripLabel5
             // 
-            this.toolStripLabel5.Name = "toolStripLabel5";
-            this.toolStripLabel5.Size = new System.Drawing.Size(112, 22);
-            this.toolStripLabel5.Text = "要替换的地址(包含)";
+            toolStripLabel5.Name = "toolStripLabel5";
+            toolStripLabel5.Size = new Size(112, 22);
+            toolStripLabel5.Text = "要替换的地址(包含)";
             // 
             // tbReplaceDomain
             // 
-            this.tbReplaceDomain.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.tbReplaceDomain.Name = "tbReplaceDomain";
-            this.tbReplaceDomain.Size = new System.Drawing.Size(120, 25);
-            this.tbReplaceDomain.Text = "hdtime.org";
+            tbReplaceDomain.Name = "tbReplaceDomain";
+            tbReplaceDomain.Size = new Size(120, 25);
+            tbReplaceDomain.Text = "hdtime.org";
             // 
             // toolStripLabel4
             // 
-            this.toolStripLabel4.Name = "toolStripLabel4";
-            this.toolStripLabel4.Size = new System.Drawing.Size(80, 22);
-            this.toolStripLabel4.Text = "替换为的地址";
+            toolStripLabel4.Name = "toolStripLabel4";
+            toolStripLabel4.Size = new Size(80, 22);
+            toolStripLabel4.Text = "替换为的地址";
             // 
             // tbTargetUrl
             // 
-            this.tbTargetUrl.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.tbTargetUrl.Name = "tbTargetUrl";
-            this.tbTargetUrl.Size = new System.Drawing.Size(300, 25);
-            this.tbTargetUrl.Text = "https://tracker.hdtime.org/announce.php?passkey=yourpasskey";
+            tbTargetUrl.Name = "tbTargetUrl";
+            tbTargetUrl.Size = new Size(300, 25);
+            tbTargetUrl.Text = "https://tracker.hdtime.org/announce.php?passkey=yourpasskey";
             // 
             // btnReplace
             // 
-            this.btnReplace.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnReplace.Enabled = false;
-            this.btnReplace.Image = ((System.Drawing.Image)(resources.GetObject("btnReplace.Image")));
-            this.btnReplace.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnReplace.Name = "btnReplace";
-            this.btnReplace.Size = new System.Drawing.Size(36, 22);
-            this.btnReplace.Text = "替换";
-            this.btnReplace.Click += new System.EventHandler(this.btnReplace_Click);
+            btnReplace.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnReplace.Enabled = false;
+            btnReplace.Image = (Image)resources.GetObject("btnReplace.Image");
+            btnReplace.ImageTransparentColor = Color.Magenta;
+            btnReplace.Name = "btnReplace";
+            btnReplace.Size = new Size(36, 22);
+            btnReplace.Text = "替换";
+            btnReplace.Click += btnReplace_Click;
             // 
             // toolStripContainer1
             // 
-            this.toolStripContainer1.BottomToolStripPanelVisible = false;
+            toolStripContainer1.BottomToolStripPanelVisible = false;
             // 
             // toolStripContainer1.ContentPanel
             // 
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.tbLog);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(670, 331);
-            this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStripContainer1.LeftToolStripPanelVisible = false;
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
-            this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.RightToolStripPanelVisible = false;
-            this.toolStripContainer1.Size = new System.Drawing.Size(670, 406);
-            this.toolStripContainer1.TabIndex = 0;
-            this.toolStripContainer1.Text = "toolStripContainer1";
+            toolStripContainer1.ContentPanel.Controls.Add(tbLog);
+            toolStripContainer1.ContentPanel.Margin = new Padding(4);
+            toolStripContainer1.ContentPanel.Size = new Size(782, 500);
+            toolStripContainer1.Dock = DockStyle.Fill;
+            toolStripContainer1.LeftToolStripPanelVisible = false;
+            toolStripContainer1.Location = new Point(0, 0);
+            toolStripContainer1.Margin = new Padding(4);
+            toolStripContainer1.Name = "toolStripContainer1";
+            toolStripContainer1.RightToolStripPanelVisible = false;
+            toolStripContainer1.Size = new Size(782, 575);
+            toolStripContainer1.TabIndex = 0;
+            toolStripContainer1.Text = "toolStripContainer1";
             // 
             // toolStripContainer1.TopToolStripPanel
             // 
-            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStrip1);
-            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStrip2);
-            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStrip3);
+            toolStripContainer1.TopToolStripPanel.Controls.Add(toolStrip1);
+            toolStripContainer1.TopToolStripPanel.Controls.Add(toolStrip2);
+            toolStripContainer1.TopToolStripPanel.Controls.Add(toolStrip3);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 406);
-            this.Controls.Add(this.toolStripContainer1);
-            this.Name = "Form1";
-            this.Text = "authkey替换passkey工具";
-            this.toolStrip2.ResumeLayout(false);
-            this.toolStrip2.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            this.toolStrip3.ResumeLayout(false);
-            this.toolStrip3.PerformLayout();
-            this.toolStripContainer1.ContentPanel.ResumeLayout(false);
-            this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);
-            this.toolStripContainer1.TopToolStripPanel.PerformLayout();
-            this.toolStripContainer1.ResumeLayout(false);
-            this.toolStripContainer1.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 17F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(782, 575);
+            Controls.Add(toolStripContainer1);
+            Margin = new Padding(4);
+            Name = "Form1";
+            Text = "authkey替换passkey工具";
+            toolStrip2.ResumeLayout(false);
+            toolStrip2.PerformLayout();
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
+            toolStrip3.ResumeLayout(false);
+            toolStrip3.PerformLayout();
+            toolStripContainer1.ContentPanel.ResumeLayout(false);
+            toolStripContainer1.TopToolStripPanel.ResumeLayout(false);
+            toolStripContainer1.TopToolStripPanel.PerformLayout();
+            toolStripContainer1.ResumeLayout(false);
+            toolStripContainer1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
 
-        private System.Windows.Forms.ToolStripPanel BottomToolStripPanel;
-        private System.Windows.Forms.ToolStripPanel TopToolStripPanel;
-        private System.Windows.Forms.ToolStripPanel RightToolStripPanel;
-        private System.Windows.Forms.ToolStripPanel LeftToolStripPanel;
-        private System.Windows.Forms.ToolStripContentPanel ContentPanel;
-        private System.Windows.Forms.ToolStrip toolStrip2;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
-        private System.Windows.Forms.ToolStripTextBox tbUsername;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
-        private System.Windows.Forms.ToolStripTextBox tbPassword;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripButton btnLogin;
-        private System.Windows.Forms.RichTextBox tbLog;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripComboBox cbType;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripTextBox tbUrl;
-        private System.Windows.Forms.ToolStrip toolStrip3;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel5;
-        private System.Windows.Forms.ToolStripTextBox tbReplaceDomain;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
-        private System.Windows.Forms.ToolStripTextBox tbTargetUrl;
-        private System.Windows.Forms.ToolStripButton btnReplace;
-        private System.Windows.Forms.ToolStripContainer toolStripContainer1;
+        private ToolStripPanel BottomToolStripPanel;
+        private ToolStripPanel TopToolStripPanel;
+        private ToolStripPanel RightToolStripPanel;
+        private ToolStripPanel LeftToolStripPanel;
+        private ToolStripContentPanel ContentPanel;
+        private ToolStrip toolStrip2;
+        private ToolStripLabel toolStripLabel2;
+        private ToolStripTextBox tbUsername;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripLabel toolStripLabel3;
+        private ToolStripTextBox tbPassword;
+        private ToolStripSeparator toolStripSeparator2;
+        private ToolStripButton btnLogin;
+        private RichTextBox tbLog;
+        private ToolStrip toolStrip1;
+        private ToolStripComboBox cbType;
+        private ToolStripLabel toolStripLabel1;
+        private ToolStripTextBox tbUrl;
+        private ToolStrip toolStrip3;
+        private ToolStripLabel toolStripLabel5;
+        private ToolStripTextBox tbReplaceDomain;
+        private ToolStripLabel toolStripLabel4;
+        private ToolStripTextBox tbTargetUrl;
+        private ToolStripButton btnReplace;
+        private ToolStripContainer toolStripContainer1;
     }
 }
 

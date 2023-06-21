@@ -20,7 +20,7 @@ namespace QbTrackerUtil
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            switch (cbType.SelectedText)
+            switch (cbType.SelectedItem)
             {
                 case "qBitorrent":
                     qbLogin();
@@ -35,7 +35,7 @@ namespace QbTrackerUtil
 
         private void btnReplace_Click(object sender, EventArgs e)
         {
-            switch (cbType.SelectedText)
+            switch (cbType.SelectedItem)
             {
                 case "qBitorrent":
                     qbReplace();
