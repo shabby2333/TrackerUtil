@@ -1,4 +1,8 @@
-﻿namespace QbTrackerUtil
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+
+namespace QbTrackerUtil
 {
     partial class Form1
     {
